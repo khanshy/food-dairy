@@ -1,0 +1,71 @@
+.c-select {
+    position: relative;
+    height: 41px;
+    text-align: initial;
+    > .c-select-options {
+        position: absolute;
+        width: 100%;
+        top: 55px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.25s;
+        z-index: 999;
+        border: 1px solid #e9e9e9;
+        box-shadow: 0 0 5px rgba(0,0,0,0.10);
+        font-size: 12px;
+        > div {
+            padding: 10px 20px;
+            cursor: pointer;
+            &:hover {
+                background-color: #68CF17;
+                color: #fff;
+            }
+        }
+    }
+    > .c-select-input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: -webkit-fill-available;
+        height: 100%;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 0px 0px 0px 18px;
+        outline: none;
+        background: #fff;
+        border:1px solid #e9e9e9;
+    }
+    &::after, &::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        width: 12px;
+        height: 2px;
+        background: #555;
+        z-index: 99;
+        transition: 0.5s;
+    }
+    &::after {
+        right: 20px;
+        transform: rotate(-40deg);
+    }
+    &::before {
+        right:28px;
+        transform: rotate(40deg);
+    }
+    &.active::after {
+        right: 28px;
+    }
+    &.active::before {
+        right: 20px;
+    }
+    &.active {
+        .c-select-options {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

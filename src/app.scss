@@ -1,0 +1,111 @@
+
+// @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+:root {
+    --primary: #68CF17;
+    --secondary:#7EEF25;
+    --tertiary: #F6F8FE;
+    --quaternary : #F60303;
+
+    --white: #FFFFFF;
+    --black: #1D1D1D;
+    --smoke: #737373;
+    --smokeSecondary: #CFCFCF;
+
+    --lightPrimary: #16CE3F;
+    --lightPrimaryBack: #16ce3f1a;
+    --lightQuaternaryBack: #f703031a;
+    --lightSmoke:#F3F2F2;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
+    font-weight: normal/bold/inherit;
+    font-display: block;
+}
+
+body {
+    margin: 0;
+    background-color: var(--tertiary);
+    font-family: 'Plus Jakarta Sans';
+    .container {
+        max-width: 1064px;
+        min-width: 350px;
+        display: flex;
+        margin: auto;
+        padding: 20px;
+    }
+    .button {
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        &.active {
+            font-weight: 600;
+            color: var(--white);
+            background: var(--primary);
+            box-shadow: 4px 8px 10px rgba(104, 207, 23, 0.16);
+        }
+    }
+}
+
+.black {
+    color: var(--black);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    position: relative;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+// .FJakarta-10N-400 {
+//     font-family: 'Plus Jakarta Sans';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 10px;
+//     line-height: 130%;
+// }
+// .FJakarta-12N-400 {
+//     font-family: 'Plus Jakarta Sans';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: 130%;
+// }
+// .FJakarta-14N-400 {
+//     font-family: 'Plus Jakarta Sans';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 130%;
+// }
+
+// .FJakarta-12N-600 {
+//     font-family: 'Plus Jakarta Sans';
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 12px;
+//     line-height: 130%;
+// }
+// .FJakarta-16N-600 {
+//     font-family: 'Plus Jakarta Sans';
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 16x;
+//     line-height: 130%;
+// }
+// .FJakarta-20N-600 {
+//     font-family: 'Plus Jakarta Sans';
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 20px;
+//     line-height: 130%;
+// }
+// .FJakarta-22N-600 {
+//     font-family: 'Plus Jakarta Sans';
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 22px;
+//     line-height: 130%;
+// }
